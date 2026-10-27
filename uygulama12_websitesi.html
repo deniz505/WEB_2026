@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futbol Dünyası</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f2;
+      color: #183323;
+    }
+    header {
+      background: #103d27;
+      color: white;
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    header h1 { margin: 0; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #17663d, #071e13);
+      color: white;
+      padding: 75px 8%;
+      text-align: center;
+    }
+    .hero h2 { font-size: 42px; margin: 0 0 16px; }
+    .hero p { font-size: 18px; line-height: 1.6; }
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 24px;
+      background: #c8ff73;
+      color: #17351f;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { max-width: 1050px; margin: auto; padding: 35px 20px; }
+    h2.section-title { text-align: center; margin-bottom: 25px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px #0000000c;
+    }
+    .card .emoji { font-size: 38px; }
+    .card h3 { color: #17663d; }
+    .card p { line-height: 1.6; }
+    .matches {
+      background: #e0eee4;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      line-height: 2;
+    }
+    footer {
+      background: #103d27;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⚽ Futbol Dünyası</h1>
+    <nav>
+      <a href="#anasayfa">Ana Sayfa</a>
+      <a href="#haberler">Haberler</a>
+      <a href="#takimlar">Takımlar</a>
+      <a href="#hakkinda">Hakkımızda</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="anasayfa">
+    <h2>Futbolun Kalbi Burada Atıyor!</h2>
+    <p>En güzel goller, büyük takımlar ve futbol tutkusuyla dolu bir dünya.</p>
+    <a class="button" href="#haberler">Keşfetmeye Başla</a>
+  </section>
+
+  <main>
+    <section id="haberler">
+      <h2 class="section-title">📰 Futbol Köşesi</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🏆</div>
+          <h3>Futbolun Heyecanı</h3>
+          <p>Futbol, takım çalışmasını, mücadeleyi ve dostluğu bir araya getiren evrensel bir spordur.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">⚽</div>
+          <h3>Unutulmaz Goller</h3>
+          <p>Son dakikada gelen goller ve etkileyici şutlar futbolseverlere unutulmaz anlar yaşatır.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🥅</div>
+          <h3>Futbolun Kuralları</h3>
+          <p>Takım oyunu, adil mücadele ve rakibe saygı futbolun temel değerleri arasındadır.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="takimlar" style="margin-top:45px">
+      <h2 class="section-title">🌟 Popüler Takımlar</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🔴🟡</div>
+          <h3>Galatasaray</h3>
+          <p>Türkiye'nin köklü futbol kulüplerinden biri.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🟡🔵</div>
+          <h3>Fenerbahçe</h3>
+          <p>Büyük taraftar kitlesiyle tanınan İstanbul kulübü.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">⚫⚪</div>
+          <h3>Beşiktaş</h3>
+          <p>Köklü tarihi ve tutkulu taraftarlarıyla tanınır.</p>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:45px">
+      <h2 class="section-title">📅 Maç Zamanı</h2>
+      <div class="matches">
+        <strong>Futbol takvimini takip et!</strong><br>
+        Güncel fikstür ve maç sonuçları için<br>
+        <a href="https://www.tff.org/" target="_blank" rel="noopener noreferrer">Türkiye Futbol Federasyonu</a>
+        sitesini ziyaret edebilirsin.
+      </div>
+    </section>
+
+    <section id="hakkinda" style="margin-top:45px">
+      <h2 class="section-title">ℹ️ Hakkımızda</h2>
+      <div class="card">
+        Futbol Dünyası, futbolseverler için hazırlanmış örnek bir web sitesidir.
+        Amacımız futbolun heyecanını, takımları ve bu sporun güzelliklerini
+        tek bir yerde buluşturmaktır.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>⚽ Futbol Dünyası</p>
+    <p>Futbol sevgisiyle hazırlandı. © 2026</p>
+  </footer>
+</body>
+</html>
